@@ -6,29 +6,46 @@
 		<link rel="stylesheet" href="css/style.css">
 	</head>
 	<body>
-		<header class="header">
+		<header class="main-header">
+		<h1>Грузчики Новосибирск</h1>
+		<!-- Заголовок будет скрыт средствами CSS -->
 			<div class="logo">
 				<img src="img/logo-porters.png" width="139" height="12" alt="logo-header">
 			</div>
-			<div class="header__toggle-menu header__toggle-menu--close"></div>
-			<!-- с помощью JS будет добавляться класс  header__toggle-menu--open-->
-			<nav>
+			<div class="main-header__toggle-menu main-header__toggle-menu--close"></div>
+			<!-- с помощью JS будет добавляться класс  main-header__toggle-menu--open-->
+			<nav class="main-navigation">
 				<ul>
 					<li><a href="#">Услуги</a></li>
 					<li><a href="#">О нас</a></li>
 					<li><a href="#">Как нас найти</a></li>
 				</ul>
 			</nav>
-			<div class="header__telephone-number">
-				+7(383)213-11-98
+			<div class="office-phone">
+				<a href="#">
+					<span class="office-phone__icon"></span>
+					<span class="office-phone__number">+7(383)213-11-98</span>
+				</a>
 			</div>
 		</header>
 		<article class="promo-block-services">
 			<div class="social-icons">
-				<a href="#" class="social-icon fb-icon">Фэйсбук</a>
-				<a href="#" class="social-icon whats-icon">Ватсап</a>
-				<a href="#" class="social-icon inst-icon">Инстаграмм</a>
-				<a href="#" class="social-icon vk-icon">Вконтакте</a>
+				<a href="#" class="social-icon">
+					<span class="fb-icon"></span>
+					Фэйсбук
+				</a>
+				<a href="#" class="social-icon">
+					<span class="whats-icon"></span>
+					Ватсап
+				</a>
+				<a href="#" class="social-icon inst-icon">
+					<span class="inst-icon"></span>
+					Инстаграмм
+				</a>
+				<a href="#" class="social-icon">
+					<span class="vk-icon"></span>
+					Вконтакте
+				</a>
 			</div>
 			<div class="promo-block-services__title">
 				<h2>Услуги грузчиков в Новосибирске</h2>
@@ -57,5 +74,79 @@
 			</div>
 			<button class="btn btn__order--mobile">Заказать</button>
 		</article>
+		<section class="about-us-block">
+			<h2 class="about-us-block__title">
+				О нас
+			</h2>
+			<p class="about-us-block__descr">
+				Мы оказываем услуги по погрузочным работам и перевозке с 2010 года. За это время географией нашей деятельности стал не только Новосибирск, но и Новосибирская область.
+
+				Наша фирма осуществила уже несколько тысяч погрузо-разгрузочных работ и переездов. 
+				Наши услуги грузчиков пользуются заслуженной популярностью как у частных лиц, так и у фирм и крупных организаций.
+
+				И нам действительно есть, чем гордиться – ведь именно наши грузчики приглашаются для осуществления самых сложных и масштабных переездов. А это говорит о доверии со стороны клиентов, что лучше всяких слов подтверждает качество оказываемых нами услуг.
+
+				Мы предлагаем гибкую систему оплаты услуг. Вы можете выбрать то, что подходит именно вам — наличный или безналичный расчёт. Вам обязательно понравится соотношение цены и качества, а для постоянных клиентов мы всегда рады сделать скидки!
+
+				Наша компания берет на себя все обязательства по сохранности вашего имущества. Вам будут предоставлены как финансовые, так и юридические гарантии на любые виды работ.
+
+				Мы предоставляем широкий спектр услуг грузчиков, стараясь индивидуально подобрать тот вариант, который подойдет именно вам. У нас есть опыт решения самых сложных и нестандартных задач по перевозкам. Чтобы обеспечить наилучший результат, наш менеджер всегда готов выехать к вам для проведения консультации и оценки, а грузчики помогут осуществить переезд в любое время суток.
+			</p>
+		</section>
+		<section class="how-find-us-block">
+			<div class="map">
+				<img src="img/map-tablet@1x.jpg" alt="map">
+			</div>
+			<div class="contacts">
+				<span class="contacts__adress">
+					<span class="contacts__adress--icon"></span>
+					Adress: г. Новосибирск, ул. Кубовая, 60
+				</span>
+				<span class="contacts__phone">
+					<span class="contacts__phone--icon"></span>
+					Tel.: +7(383)213-11-98
+				</span>
+				<span class="contacts__mail">
+					<span class="contacts__mail--icon"></span>
+					E-mail: gruzchiki154@mail.ru
+				</span>
+				<span class="contacts__whatsapp">
+					<span class="contacts__whatsapp--icon"></span>
+					WhatsApp: +7(913) 002-04-97
+				</span>
+			</div>
+		</section>
+		<footer class="main-footer">
+			<div class="logo logo--footer">
+				<img src="img/logo-porters.png" width="139" height="12" alt="logo-header">
+			</div>
+			<div class="main-footer__toggle-menu main-footer__toggle-menu--close"></div>
+			<!-- с помощью JS будет добавляться класс  main-footer__toggle-menu--open-->
+			<nav class="main-navigation main-navigation--footer">
+				<ul>
+					<li><a href="#">Услуги</a></li>
+					<li><a href="#">О нас</a></li>
+					<li><a href="#">Как нас найти</a></li>
+				</ul>
+			</nav>
+			<div class="social-icons">
+				<a href="#" class="social-icon">
+					<span class="fb-icon-footer"></span>
+					Фэйсбук
+				</a>
+				<a href="#" class="social-icon">
+					<span class="whats-icon-footer"></span>
+					Ватсап
+				</a>
+				<a href="#" class="social-icon inst-icon">
+					<span class="inst-icon-footer"></span>
+					Инстаграмм
+				</a>
+				<a href="#" class="social-icon">
+					<span class="vk-icon-footer"></span>
+					Вконтакте
+				</a>
+			</div>
+		</footer>
 	</body>
 </html>
