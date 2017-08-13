@@ -51,3 +51,33 @@ footerToggleMenu.addEventListener('click', function(event){
     footerMobileMenu.classList.add('main-navigation--footer-off');
   }
 });
+
+// modal
+var btnOrder = document.querySelectorAll('.btn__order-js');
+var modal = document.querySelector('.modal');
+var fieldName = modal.querySelector('.field-name__input');
+var modalOverlay = document.querySelector('.modal__overlay');
+
+btnOrder.forEach(function(item, i) {
+  item.addEventListener('click', function(event) {
+    event.preventDefault();
+    modal.classList.add('modal--on');
+    fieldName.focus();
+  });
+});
+
+modalOverlay.addEventListener('click', function(event) {
+  event.preventDefault();
+  modal.classList.remove('modal--on');
+});
+
+window.addEventListener('keydown', function(event) {
+  event.preventDefault();
+  if (event.keyCode === 27) {
+    modal.classList.remove('modal--on');
+  }
+});
+
+
+
+
