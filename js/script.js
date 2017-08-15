@@ -55,28 +55,30 @@ footerToggleMenu.addEventListener('click', function(event){
 // modal
 var btnOrder = document.querySelectorAll('.btn__order-js');
 var modal = document.querySelector('.modal');
+var btnClose = modal.querySelector('.btn__close');
+dialogPolyfill.registerDialog(modal);
+var form = modal.querySelector('.modal__form');
 var fieldName = modal.querySelector('.field-name__input');
-var modalOverlay = document.querySelector('.modal__overlay');
 
 btnOrder.forEach(function(item, i) {
-  item.addEventListener('click', function(event) {
+  item.onclick = function(event) {
     event.preventDefault();
-    modal.classList.add('modal--on');
+    modal.showModal();
     fieldName.focus();
-  });
+  };
 });
 
-modalOverlay.addEventListener('click', function(event) {
-  event.preventDefault();
-  modal.classList.remove('modal--on');
-});
-
-window.addEventListener('keydown', function(event) {
+window.onclick = function(event) {
   event.preventDefault();
   if (event.keyCode === 27) {
-    modal.classList.remove('modal--on');
+    modal.close();
   }
-});
+};
+
+btnClose.onclick = function(event) {
+  event.preventDefault();
+  modal.close();
+};
 
 
 
